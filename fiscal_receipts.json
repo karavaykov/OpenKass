@@ -1,0 +1,30 @@
+[
+  {
+    "receiptId": "CHK-1765653329471",
+    "timestamp": "Dec 13, 2025, 10:15:29 PM",
+    "items": [
+      {
+        "name": "Молоко",
+        "quantity": 5,
+        "price": 55.0,
+        "amount": 275.0
+      }
+    ],
+    "totalAmount": 275.0,
+    "paymentMethod": "ОПЛАТА НАЛИЧНЫМИ"
+  },
+  {
+    "receiptId": "CHK-1765653713650",
+    "timestamp": "Dec 13, 2025, 10:21:53 PM",
+    "items": [
+      {
+        "name": "Яйца",
+        "quantity": 30,
+        "price": 34.0,
+        "amount": 1020.0
+      }
+    ],
+    "totalAmount": 1020.0,
+    "paymentMethod": "ОПЛАТА НАЛИЧНЫМИ"
+  }
+]
