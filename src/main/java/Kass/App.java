@@ -20,7 +20,7 @@ public class App {
     private static JTable table;
     private static DefaultTableModel mainModel;
     private static Settings Settings;
-    private static Connection connection;
+    public static Connection connection;
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
@@ -153,12 +153,17 @@ public class App {
         buttonChecks.setFont(new Font(Settings.getFont(), Font.BOLD, Settings.getSizeFontBtn()));
         buttonChecks.addActionListener(e -> getChecks());
 
+        JButton buttonSettings = new JButton("Настройки");
+        buttonSettings.setFont(new Font(Settings.getFont(), Font.BOLD, Settings.getSizeFontBtn()));
+        buttonSettings.addActionListener(e -> Settings.showSettingsDialog());
+
 
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.add(buttonAdd);
         panel.add(ApplyDiscount, BorderLayout.SOUTH);
         panel.add(buttonChecks, BorderLayout.SOUTH);
+        panel.add(buttonSettings, BorderLayout.SOUTH);
         return panel;
     }
 

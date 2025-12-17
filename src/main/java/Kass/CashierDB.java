@@ -75,11 +75,12 @@ public class CashierDB {
                         UnitName TEXT NOT NULL,
                         UnitCode TEXT NOT NULL,
                         Amount REAL NOT NULL,
-                        Price REAL NOT NULL
+                        Price REAL NOT NULL,
                         PromotionPrice REAL NOT NULL
                     
                     );
                     """;
+            stmt.execute(createGoodsTable);
 
             logger.info("Таблицы Users и Checks успешно созданы или уже существуют.");
         } catch (SQLException e) {
